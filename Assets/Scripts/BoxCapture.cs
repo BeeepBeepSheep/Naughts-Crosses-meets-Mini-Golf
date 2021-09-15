@@ -41,6 +41,5 @@ public class BoxCapture : MonoBehaviour
             gameObject.tag = blueTag;
         }
         GetComponent<MeshRenderer>().material = potentialColor;
-        Debug.Log(gameObject.tag);
     }
 }
