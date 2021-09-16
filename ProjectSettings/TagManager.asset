@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BlueCaptured
   - RedCaptured
+  - DetectionLine
+  - UncapturedPoint
   layers:
   - Default
   - TransparentFX

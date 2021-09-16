@@ -7,6 +7,7 @@ public class BoxCapture : MonoBehaviour
 
     public Material redMat;
     public Material blueMat;
+    public Material defaultMat;
     private Material potentialColor;
 
     public Transform redBall;
@@ -20,6 +21,10 @@ public class BoxCapture : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         stopVelocity = new Vector3(0, 0, 0);
+        if (collision.transform != redBall && collision.transform != blueBall)
+        {
+            potentialColor = defaultMat;
+        }
         if (collision.transform == redBall)
         {
             potentialColor = redMat;
@@ -39,6 +44,8 @@ public class BoxCapture : MonoBehaviour
 
             GetComponent<BoxCollider>().isTrigger = false;
             gameObject.tag = blueTag;
+
+            // call winlogic function
         }
         GetComponent<MeshRenderer>().material = potentialColor;
     }
