@@ -1,17 +1,17 @@
-using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;using TMPro;public class Player : MonoBehaviour{    public TextMeshProUGUI speedDial;    public TextMeshProUGUI powerDial;    public Slider powerSlider;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform spawnPoint;    public float maxShotPower = 70;    public float currantShotPower = 0f;    public bool canShoot = true;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
+using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;using TMPro;public class Player : MonoBehaviour{    public TextMeshProUGUI speedDial;    public TextMeshProUGUI powerDial;    public Slider powerSlider;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform spawnPoint;    public float maxShotPower = 70;    public float currantShotPower = 0f;    public bool canShoot = true;    public bool canRotate = true;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
         currantShotPower = 0f;
     }    void Start()    {        redBall.GetComponent<Transform>().position = spawnPoint.position;        blueBall.GetComponent<Transform>().position = spawnPoint.position;        redBall.useGravity = false;        powerSlider.maxValue = maxShotPower;    }    void Update()    {        transform.position = currantBall.position;
 
         //ui
         speedDial.SetText(currantBall.velocity.magnitude.ToString());        powerDial.SetText(currantShotPower.ToString());
         powerSlider.value = currantShotPower;
-        xRotation += Input.GetAxis("Mouse X") * rotationSpeed;
-
-        // stop movement if to slow
+        // stop movement if to slow
         stopVelocity = new Vector3(0, 0, 0);        if (currantBall.velocity.magnitude <= 0.05)        {            currantBall.velocity = stopVelocity;            SwitchPlayer();        }
 
         //rotate cam
-        transform.rotation = Quaternion.Euler(transform.rotation.y, xRotation, 0f);        ShootLogic();    }    void ShootLogic()    {        if (canShoot)        {            if (Input.GetMouseButton(0))            {                currantShotPower -= Input.GetAxis("Mouse Y");                if (currantShotPower > maxShotPower)
+        xRotation += Input.GetAxis("Mouse X") * rotationSpeed;
+        transform.rotation = Quaternion.Euler(transform.rotation.y, xRotation, 0f);
+        ShootLogic();    }    void ShootLogic()    {        if (canShoot)        {            if (Input.GetMouseButton(0))            {                currantShotPower -= Input.GetAxis("Mouse Y");                if (currantShotPower > maxShotPower)
                 {
                     currantShotPower = maxShotPower;
                 }
@@ -24,4 +24,4 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
             redBall.angularVelocity = stopVelocity;
 
             if (currantBall == blueBall)            {                currantBall = redBall;                currantBall.useGravity = true;            }            else            {                currantBall = blueBall;
-                currantBall.useGravity = true;            }        }    }}
+                currantBall.useGravity = true;            }        }    }}
