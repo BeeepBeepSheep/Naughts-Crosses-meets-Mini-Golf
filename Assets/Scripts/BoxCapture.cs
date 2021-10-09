@@ -18,6 +18,9 @@ public class BoxCapture : MonoBehaviour
     private string blueTag = "BlueCaptured";
     private string redTag = "RedCaptured";
 
+    public GameObject redIcon;
+    public GameObject blueIcon;
+
     void OnTriggerEnter(Collider collision)
     {
         stopVelocity = new Vector3(0, 0, 0);
@@ -25,6 +28,7 @@ public class BoxCapture : MonoBehaviour
         {
             potentialColor = defaultMat;
         }
+
         if (collision.transform == redBall)
         {
             potentialColor = redMat;
@@ -34,7 +38,10 @@ public class BoxCapture : MonoBehaviour
 
             GetComponent<BoxCollider>().isTrigger = false;
             gameObject.tag = redTag;
+
+            redIcon.SetActive(true);
         }
+
         if (collision.transform == blueBall)
         {
             potentialColor = blueMat;
@@ -45,7 +52,7 @@ public class BoxCapture : MonoBehaviour
             GetComponent<BoxCollider>().isTrigger = false;
             gameObject.tag = blueTag;
 
-            // call winlogic function
+            blueIcon.SetActive(true);
         }
         GetComponent<MeshRenderer>().material = potentialColor;
     }
