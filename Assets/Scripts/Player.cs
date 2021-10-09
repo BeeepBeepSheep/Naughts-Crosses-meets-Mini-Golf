@@ -6,7 +6,10 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
         speedDial.SetText(currantBall.velocity.magnitude.ToString());        powerDial.SetText(currantShotPower.ToString());
         powerSlider.value = currantShotPower;
         // stop movement if to slow
-        stopVelocity = new Vector3(0, 0, 0);        if (currantBall.velocity.magnitude <= 0.05)        {            currantBall.velocity = stopVelocity;            SwitchPlayer();        }
+        stopVelocity = new Vector3(0, 0, 0);        if (currantBall.velocity.magnitude <= 0.05)        {            currantBall.velocity = stopVelocity;            if (canSwitch & currantBall.velocity.x == 0 & currantBall.velocity.y == 0 & currantBall.velocity.z == 0)
+            {
+                SwitchPlayer();            }
+        }
 
         //rotate cam
         xRotation += Input.GetAxis("Mouse X") * rotationSpeed;
@@ -18,10 +21,21 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 if (currantShotPower < 0f)
                 {
                     currantShotPower = 0f;
-                }            }            if (Input.GetMouseButtonUp(0))            {                currantBall.velocity = transform.forward * (currantShotPower);                currantShotPower = 0f;                canSwitch = true;                canShoot = false;            }        }    }    void SwitchPlayer()    {        if (canSwitch & currantBall.velocity.x == 0 & currantBall.velocity.y == 0 & currantBall.velocity.z == 0)        {            canShoot = true;            canSwitch = false;            currantShotPower = 0f;
+                }            }            if (Input.GetMouseButtonUp(0))            {                currantBall.velocity = transform.forward * (currantShotPower);                currantShotPower = 0f;                canSwitch = true;                canShoot = false;            }        }    }    public void SwitchPlayer()    {
+        canShoot = true;
+        canSwitch = false;
+        currantShotPower = 0f;
 
-            blueBall.angularVelocity = stopVelocity;
-            redBall.angularVelocity = stopVelocity;
+        blueBall.angularVelocity = stopVelocity;
+        redBall.angularVelocity = stopVelocity;
 
-            if (currantBall == blueBall)            {                currantBall = redBall;                currantBall.useGravity = true;            }            else            {                currantBall = blueBall;
-                currantBall.useGravity = true;            }        }    }}
+        if (currantBall == blueBall)
+        {
+            currantBall = redBall;
+            currantBall.useGravity = true;
+        }
+        else
+        {
+            currantBall = blueBall;
+            currantBall.useGravity = true;
+        }    }}
