@@ -4,28 +4,37 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    public GameObject redScreen;
-    public GameObject blueScreen;
     public GameObject hud;
+    public GameObject winScreen;
+
+    public GameObject redTitle;
+    public GameObject blueTitle;
+
+    public GameObject player;
 
     void Start()
     {
-        redScreen.SetActive(false);
-        blueScreen.SetActive(false);
         hud.SetActive(true);
     }
     public void RedWin()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        redScreen.SetActive(true);
-        hud.SetActive(false);
+        UniversalWinScreen();
+        redTitle.SetActive(true);
     }
     public void BlueWin()
     {
+        UniversalWinScreen();
+        blueTitle.SetActive(true);
+    }
+    public void UniversalWinScreen()
+    {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        blueScreen.SetActive(true);
+
         hud.SetActive(false);
+        winScreen.SetActive(true);
+
+        Time.timeScale = 0f;
+        player.GetComponent<Player>().enabled = false;
     }
 }

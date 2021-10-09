@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -54,5 +55,15 @@ public class Pause : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GetComponent<Player>().enabled = false;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void ReloadScene()
+    {
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 }
