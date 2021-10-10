@@ -1,4 +1,5 @@
-using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;using TMPro;public class Player : MonoBehaviour{    public TextMeshProUGUI speedDial;    public TextMeshProUGUI powerDial;    public Slider powerSlider;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform spawnPoint;    public float maxShotPower = 70;    public float currantShotPower = 0f;    public bool canShoot = true;    public bool canRotate = true;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
+using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;using TMPro;public class Player : MonoBehaviour{    public TextMeshProUGUI speedDial;    public TextMeshProUGUI powerDial;    public Slider powerSlider;
+    public float redMovesCount = 0f;    public float blueMovesCount = 0f;    public TextMeshProUGUI blueMovesCountNum;    public TextMeshProUGUI redMovesCountNum;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform spawnPoint;    public float maxShotPower = 70f;    public float currantShotPower = 0f;    public bool canShoot = true;    public bool canRotate = true;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
         currantShotPower = 0f;
     }    void Start()    {        redBall.GetComponent<Transform>().position = spawnPoint.position;        blueBall.GetComponent<Transform>().position = spawnPoint.position;        redBall.useGravity = false;        powerSlider.maxValue = maxShotPower;    }    void Update()    {        transform.position = currantBall.position;
 
@@ -33,9 +34,13 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
         {
             currantBall = redBall;
             currantBall.useGravity = true;
+            blueMovesCount++;
+            blueMovesCountNum.SetText(blueMovesCount.ToString());
         }
         else
         {
             currantBall = blueBall;
             currantBall.useGravity = true;
+            redMovesCount++;
+            redMovesCountNum.SetText(blueMovesCount.ToString());
         }    }}
