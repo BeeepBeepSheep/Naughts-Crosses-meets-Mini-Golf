@@ -15,6 +15,6 @@ public class OutOfBounds : MonoBehaviour
         player.GetComponent<Player>().SwitchPlayer();
         collision.GetComponent<Rigidbody>().velocity = stopVelocity;
         collision.GetComponent<Rigidbody>().useGravity = false;
-        collision.transform.position = spawnPoint.position;
+        collision.transform.position = player.GetComponent<Player>().currantSpawnPoint.position;
     }
 }
