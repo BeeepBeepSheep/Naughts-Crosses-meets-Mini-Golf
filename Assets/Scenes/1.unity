@@ -1349,11 +1349,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 1392317890}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1392317889}
+  blueIcon: {fileID: 2120678810}
 --- !u!65 &81734923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1789,11 +1789,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 803948809}
+  blueIcon: {fileID: 889835658}
 --- !u!65 &103860700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2013,11 +2013,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1126213664}
+  blueIcon: {fileID: 867405574}
 --- !u!65 &107237673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2332,11 +2332,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 782166541}
+  blueIcon: {fileID: 1640863436}
 --- !u!65 &118361598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2518,11 +2518,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 863413013}
+  blueIcon: {fileID: 1739120360}
 --- !u!65 &121050744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5559,11 +5559,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1126213664}
+  blueIcon: {fileID: 867405574}
 --- !u!65 &278710362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6536,7 +6536,7 @@ GameObject:
   - component: {fileID: 377345394}
   m_Layer: 0
   m_Name: PivotPoint
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6575,7 +6575,7 @@ MonoBehaviour:
   Environment3: {fileID: 1743049673}
   Environment4: {fileID: 1108054665}
   Environment5: {fileID: 480994536}
-  selectedLevel: 2
+  selectedLevel: 1
   maxShotPower: 70
   currantShotPower: 0
   canShoot: 1
@@ -7026,11 +7026,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 803948809}
+  blueIcon: {fileID: 889835658}
 --- !u!65 &410737587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7850,11 +7850,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 270853224}
+  blueIcon: {fileID: 618127145}
 --- !u!65 &487259539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8201,11 +8201,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 270853224}
+  blueIcon: {fileID: 618127145}
 --- !u!65 &506488879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8317,11 +8317,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1126213664}
+  blueIcon: {fileID: 867405574}
 --- !u!65 &508922626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9437,11 +9437,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 2127485710}
+  blueIcon: {fileID: 434342910}
 --- !u!65 &576975486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10217,11 +10217,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 782166541}
+  blueIcon: {fileID: 1640863436}
 --- !u!65 &623301422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11848,11 +11848,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 832290837}
+  blueIcon: {fileID: 1207492800}
 --- !u!65 &730067483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12784,11 +12784,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 803948809}
+  blueIcon: {fileID: 889835658}
 --- !u!65 &765056800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13857,11 +13857,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 863413013}
+  blueIcon: {fileID: 1739120360}
 --- !u!65 &801183207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17276,11 +17276,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 65146357}
+  blueIcon: {fileID: 2027583165}
 --- !u!65 &944283230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17630,11 +17630,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 2127485710}
+  blueIcon: {fileID: 434342910}
 --- !u!65 &965375021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18023,11 +18023,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 863413013}
+  blueIcon: {fileID: 1739120360}
 --- !u!65 &980446829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18139,11 +18139,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 1392317890}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1392317889}
+  blueIcon: {fileID: 2120678810}
 --- !u!65 &995971190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19314,11 +19314,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 782166541}
+  blueIcon: {fileID: 1640863436}
 --- !u!65 &1065186696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20922,11 +20922,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 832290837}
+  blueIcon: {fileID: 1207492800}
 --- !u!65 &1175083205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21685,11 +21685,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 270853224}
+  blueIcon: {fileID: 618127145}
 --- !u!65 &1204855402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22003,11 +22003,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 832290837}
+  blueIcon: {fileID: 1207492800}
 --- !u!65 &1227727313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22784,11 +22784,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 782166541}
+  blueIcon: {fileID: 1640863436}
 --- !u!65 &1271567606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23529,11 +23529,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1126213664}
+  blueIcon: {fileID: 867405574}
 --- !u!65 &1299746060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24751,11 +24751,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 2127485710}
+  blueIcon: {fileID: 434342910}
 --- !u!65 &1371951833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25564,11 +25564,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 1392317890}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1392317889}
+  blueIcon: {fileID: 2120678810}
 --- !u!65 &1407295695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26559,11 +26559,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 2127485710}
+  blueIcon: {fileID: 434342910}
 --- !u!65 &1464867619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26913,11 +26913,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 803948809}
+  blueIcon: {fileID: 889835658}
 --- !u!65 &1471194843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30819,11 +30819,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 65497914}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 65146357}
+  blueIcon: {fileID: 2027583165}
 --- !u!65 &1662319714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31000,11 +31000,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 1392317890}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 1392317889}
+  blueIcon: {fileID: 2120678810}
 --- !u!65 &1684950469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31507,11 +31507,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1041069554}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 863413013}
+  blueIcon: {fileID: 1739120360}
 --- !u!65 &1720656195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31861,11 +31861,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 1076111996}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 65146357}
+  blueIcon: {fileID: 2027583165}
 --- !u!65 &1736520039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32224,11 +32224,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 832290837}
+  blueIcon: {fileID: 1207492800}
 --- !u!65 &1753674320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33938,11 +33938,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 65146357}
+  blueIcon: {fileID: 2027583165}
 --- !u!65 &1842265451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34717,11 +34717,11 @@ MonoBehaviour:
   redMat: {fileID: 2100000, guid: 50c2e9cf46e467546939599336e073b0, type: 2}
   blueMat: {fileID: 2100000, guid: a0b820616bea5424ba2f42f688bd9023, type: 2}
   defaultMat: {fileID: 2100000, guid: ac60ea2a11d701d48b702d8bbed05c34, type: 2}
-  redBall: {fileID: 0}
-  blueBall: {fileID: 0}
+  redBall: {fileID: 620904077}
+  blueBall: {fileID: 1044583716}
   spawnPoint: {fileID: 124616035}
-  redIcon: {fileID: 0}
-  blueIcon: {fileID: 0}
+  redIcon: {fileID: 270853224}
+  blueIcon: {fileID: 618127145}
 --- !u!65 &1871061627
 BoxCollider:
   m_ObjectHideFlags: 0

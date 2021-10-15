@@ -1,9 +1,13 @@
 using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.UI;using TMPro;public class Player : MonoBehaviour{    public TextMeshProUGUI speedDial;    public TextMeshProUGUI powerDial;    public Slider powerSlider;
-    public float redMovesCount = 0f;    public float blueMovesCount = 0f;    public TextMeshProUGUI blueMovesCountNum;    public TextMeshProUGUI redMovesCountNum;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform currantSpawnPoint;    public Transform spawnPoint1;    public Transform spawnPoint2;    public Transform spawnPoint3;    public Transform spawnPoint4;    public Transform spawnPoint5;    public GameObject Environment1;    public GameObject Environment2;    public GameObject Environment3;    public GameObject Environment4;    public GameObject Environment5;    public int selectedLevel = 1;    public float maxShotPower = 70f;    public float currantShotPower = 0f;    public bool canShoot = true;    public bool canRotate = true;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
+    public float redMovesCount = 0f;    public float blueMovesCount = 0f;    public TextMeshProUGUI blueMovesCountNum;    public TextMeshProUGUI redMovesCountNum;    float xRotation = 0f;    public Rigidbody currantBall;    public Rigidbody blueBall;    public Rigidbody redBall;    private bool canSwitch = false;    private Vector3 stopVelocity;    public float rotationSpeed = 5f;    public Transform currantSpawnPoint;    public Transform spawnPoint1;    public Transform spawnPoint2;    public Transform spawnPoint3;    public Transform spawnPoint4;    public Transform spawnPoint5;    public GameObject Environment1;    public GameObject Environment2;    public GameObject Environment3;    public GameObject Environment4;    public GameObject Environment5;    public int selectedLevel = 1;    public float maxShotPower = 70f;    public float currantShotPower = 0f;    public bool canShoot = true;    public bool canRotate = true;
+
+    public GameObject levelSelector;    void Awake()    {        Cursor.lockState = CursorLockMode.Locked;        Cursor.visible = false;
         currantShotPower = 0f;
     }    void Start()    {
-        SelectedLevel();
-        redBall.GetComponent<Transform>().position = currantSpawnPoint.position;        blueBall.GetComponent<Transform>().position = currantSpawnPoint.position;        redBall.useGravity = false;        powerSlider.maxValue = maxShotPower;    }    void Update()    {        transform.position = currantBall.position;
+        redBall.useGravity = false;        powerSlider.maxValue = maxShotPower;        levelSelector = GameObject.Find("LevelSelector");
+
+        levelSelector.GetComponent<LevelSelector>().WorldStart();        WorldSelect();
+        redBall.GetComponent<Transform>().position = currantSpawnPoint.position;        blueBall.GetComponent<Transform>().position = currantSpawnPoint.position;    }    void Update()    {        transform.position = currantBall.position;
 
         //ui
         speedDial.SetText(currantBall.velocity.magnitude.ToString());        powerDial.SetText(currantShotPower.ToString());
@@ -45,12 +49,11 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
             currantBall.useGravity = true;
             redMovesCount++;
             redMovesCountNum.SetText(blueMovesCount.ToString());
-        }    }    void SelectedLevel()
+        }    }    public void WorldSelect()
     {
-        switch (selectedLevel)
+        switch (levelSelector.GetComponent<LevelSelector>().requestedLevel)
         {
             case 1:
-                currantSpawnPoint = spawnPoint1;
                 Environment1.SetActive(true);
                 Environment2.SetActive(false);
                 Environment3.SetActive(false);
@@ -59,7 +62,6 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 break;
 
             case 2:
-                currantSpawnPoint = spawnPoint2;
                 Environment1.SetActive(false);
                 Environment2.SetActive(true);
                 Environment3.SetActive(false);
@@ -68,7 +70,6 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 break;
 
             case 3:
-                currantSpawnPoint = spawnPoint3;
                 Environment1.SetActive(false);
                 Environment2.SetActive(false);
                 Environment3.SetActive(true);
@@ -77,7 +78,6 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 break;
 
             case 4:
-                currantSpawnPoint = spawnPoint4;
                 Environment1.SetActive(false);
                 Environment2.SetActive(false);
                 Environment3.SetActive(false);
@@ -86,7 +86,6 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 break;
 
             case 5:
-                currantSpawnPoint = spawnPoint5;
                 Environment1.SetActive(true);
                 Environment2.SetActive(false);
                 Environment3.SetActive(false);
