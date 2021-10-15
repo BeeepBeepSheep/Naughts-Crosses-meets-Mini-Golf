@@ -8,9 +8,12 @@ public class Pause : MonoBehaviour
     public bool gameIsPaused = false;
     public GameObject pauseMenuUI;
 
+    public GameObject levelSelector;
+
     void Start()
     {
         ResumeGame();
+        levelSelector = GameObject.Find("LevelSelector");
     }
 
     void Update()
@@ -70,6 +73,7 @@ public class Pause : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
+        Destroy(levelSelector);
         SceneManager.LoadScene("Main Menu");
     }
 }

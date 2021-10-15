@@ -8,6 +8,7 @@ public class LevelSelector : MonoBehaviour
     public GameObject player;
     public int requestedLevel;
 
+    public float sensitivity = 5;
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -69,5 +70,9 @@ public class LevelSelector : MonoBehaviour
     {
         SceneManager.LoadScene("1");
         requestedLevel = 5;
+    }
+
+    public void FullscreenTogle()
+    {
     }
 }

@@ -7,7 +7,8 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
         redBall.useGravity = false;        powerSlider.maxValue = maxShotPower;        levelSelector = GameObject.Find("LevelSelector");
 
         levelSelector.GetComponent<LevelSelector>().WorldStart();        WorldSelect();
-        redBall.GetComponent<Transform>().position = currantSpawnPoint.position;        blueBall.GetComponent<Transform>().position = currantSpawnPoint.position;    }    void Update()    {        transform.position = currantBall.position;
+        redBall.GetComponent<Transform>().position = currantSpawnPoint.position;        blueBall.GetComponent<Transform>().position = currantSpawnPoint.position;        rotationSpeed = levelSelector.GetComponent<LevelSelector>().sensitivity;
+    }    void Update()    {        transform.position = currantBall.position;
 
         //ui
         speedDial.SetText(currantBall.velocity.magnitude.ToString());        powerDial.SetText(currantShotPower.ToString());
@@ -90,7 +91,7 @@ using System.Collections;using System.Collections.Generic;using UnityEngine;u
                 Environment2.SetActive(false);
                 Environment3.SetActive(false);
                 Environment4.SetActive(false);
-                Environment5.SetActive(false);
+                Environment5.SetActive(true);
                 break;
 
             default:
