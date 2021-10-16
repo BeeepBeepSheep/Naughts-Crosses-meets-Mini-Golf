@@ -9,7 +9,6 @@ public class Pause : MonoBehaviour
     public GameObject pauseMenuUI;
 
     public GameObject levelSelector;
-
     void Start()
     {
         ResumeGame();
