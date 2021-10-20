@@ -16,6 +16,10 @@ public class LevelSelector : MonoBehaviour
 
     public bool isFullScreen = true;
     public GameObject fullscreenTick;
+
+    public AudioSource music;
+    public Slider volSlider;
+
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -104,5 +108,9 @@ public class LevelSelector : MonoBehaviour
     public void AdjustSens(float newSens)
     {
         sensitivity = newSens;
+    }  
+    public void AdjustVol()
+    {
+        music.volume = volSlider.value;
     }
 }

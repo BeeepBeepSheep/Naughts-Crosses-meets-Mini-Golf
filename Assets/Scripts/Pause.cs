@@ -12,7 +12,6 @@ public class Pause : MonoBehaviour
     void Start()
     {
         ResumeGame();
-        levelSelector = GameObject.Find("LevelSelector");
     }
 
     void Update()
